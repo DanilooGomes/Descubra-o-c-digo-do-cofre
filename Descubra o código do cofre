@@ -1,0 +1,45 @@
+<script type="text/javascript">
+
+		let senha = [];
+		senha[0] = Math.floor(Math.random()*6+1);
+		senha[1] = Math.floor(Math.random()*6+1);
+		senha[2] = Math.floor(Math.random()*6+1);
+		senha[3] = Math.floor(Math.random()*6+1);
+		senha[4] = Math.floor(Math.random()*6+1);
+		senha[5] = Math.floor(Math.random()*6+1);
+		
+		const corretos = [];
+		corretos[0] = senha[0];
+		corretos[1] = senha[1];
+		corretos[2] = senha[2];
+		corretos[3] = senha[3];
+		corretos[4] = senha[4];
+		corretos[5] = senha[5];
+		document.write(corretos);
+		let informeSenha = [];
+		informeSenha[0] = prompt("Coloque o primeiro número da sua senha");
+		informeSenha[1] = prompt("Coloque o segundo número da sua senha");
+		informeSenha[2] = prompt("Coloque o terceiro número da sua senha");
+		informeSenha[3] = prompt("Coloque o quarto número da sua senha");
+		informeSenha[4] = prompt("Coloque o quinto número da sua senha");
+		informeSenha[5] = prompt("Coloque o sesto número da sua senha");
+		document.write(informeSenha);
+		if (informeSenha == corretos ){
+			document.write("Senha correta");
+		}else if(corretos[0] == informeSenha[0]){
+			document.write("Código inválido,1 número correto na posição correta");
+		}else if(corretos[1] == informeSenha[1]){
+			document.write("Código inválido,1 número correto na posição correta");
+		}else if(corretos[2] == informeSenha[2]){
+			document.write("Código inválido,1 número correto na posição correta");
+		}else if(corretos[3] == informeSenha[3]){
+			document.write("Código inválido,1 número correto na posição correta");
+		}else if(corretos[4] == informeSenha[4]){
+			document.write("Código inválido,1 número correto na posição correta");
+		}else if(corretos[5] == informeSenha[5]){
+			document.write("Código inválido,1 número correto na posição correta");
+		}else{
+			document.write("Código inválido");
+		}
+
+	</script>
